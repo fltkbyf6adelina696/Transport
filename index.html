@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Транспортная задача</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div>
+		<div class="block">
+			<label>кол-во строк</label>
+			<input id="x" type="number" value="3">
+			<label>кол-во переменных</label>
+			<input id="y" type="number" value="3">
+			<input type="checkbox" name="cb1" id="check1" value="1"/><label>рандом</label>
+			<input type="submit" value="Сгенерировать" onclick="getEquation();"/>
+			<input type="submit" value="Пример №1" onclick="getEquation(arrExample1);"/>
+			<input type="submit" value="Пример №2" onclick="getEquation(arrExample2);"/>
+		</div>
+	</div>
+	<div id="equations"></div>
+	<div id="step"></div>
+	<script src="lab3.js"></script>
+</html>
